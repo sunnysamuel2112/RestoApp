@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editUserName = findViewById(R.id.editUserName);
                 String message = editUserName.getText().toString();
                 String atom_message;
-                if (message.equals("admin")){
-                    if (password.equals("ewce@123")){
+                if (message.equals("admin") &&
+                    password.equals("ewce@123")){
                         atom_message =  (message + " Login Successful ");
                         Intent intent = new Intent(MainActivity.this, MainActivity2.class);
                         startActivity(intent);
@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
                         editUserName.setText("");
 
                     }
-                }
                 else{
                     atom_message =  ("Invalid User Credentials");
                     Toast.makeText(MainActivity.this, atom_message, Toast.LENGTH_SHORT).show();

@@ -29,6 +29,7 @@
         android:layout_height="50dp"
         android:layout_marginBottom="40dp"
         android:text="Order"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/buttonTimings"
         app:layout_constraintEnd_toEndOf="@+id/buttonTimings"
         app:layout_constraintHorizontal_bias="0.0"
@@ -40,10 +41,11 @@
         android:layout_height="50dp"
         android:layout_marginBottom="156dp"
         android:text="Timings"
-        app:layout_constraintBottom_toTopOf="@+id/buttonContactUs"
-        app:layout_constraintEnd_toEndOf="@+id/buttonContactUs"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
+        app:layout_constraintEnd_toEndOf="@+id/buttonLogout"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonContactUs" />
+        app:layout_constraintStart_toStartOf="@+id/buttonLogout" />
 
     <Button
         android:id="@+id/buttonMenu"
@@ -51,6 +53,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="120dp"
         android:text="Menu"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/buttonOrder"
         app:layout_constraintEnd_toEndOf="@+id/buttonOrder"
         app:layout_constraintHorizontal_bias="0.0"
@@ -59,10 +62,11 @@
         app:layout_constraintVertical_bias="0.713" />
 
     <Button
-        android:id="@+id/buttonContactUs"
+        android:id="@+id/buttonLogout"
         android:layout_width="200dp"
         android:layout_height="50dp"
-        android:text="Contact Us"
+        android:text="Logout"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

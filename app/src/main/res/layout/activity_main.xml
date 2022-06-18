@@ -16,16 +16,15 @@
         android:layout_marginStart="39dp"
         android:layout_marginEnd="46dp"
 
-        android:layout_marginBottom="140dp"
         android:text="Login"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittextForgotPassword"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextForgotPassword"
+        app:layout_constraintVertical_bias="0.101" />
 
     <EditText
         android:id="@+id/editUserName"
@@ -33,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="312dp"
         android:autofillHints="phone"
         android:ems="10"
         android:hint="User Name"
@@ -76,20 +75,21 @@
         android:textAlignment="center"
         android:textColor="#04554D"
         android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toTopOf="@+id/edittextForgotPassword"
-        app:layout_constraintEnd_toEndOf="@+id/edittextForgotPassword"
-        app:layout_constraintStart_toStartOf="@+id/edittextForgotPassword"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextForgotPassword"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextForgotPassword"
+        app:layout_constraintStart_toStartOf="@+id/EditTextForgotPassword"
         app:layout_constraintTop_toBottomOf="@+id/editUserName"
         app:layout_constraintVertical_bias="0.217" />
 
     <TextView
-        android:id="@+id/edittextForgotPassword"
+        android:id="@+id/EditTextForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="60dp"
-        android:text="Forgot password?"
+        android:text="Login as Customer"
+        android:onClick="custlogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editLoginBtn"
         app:layout_constraintStart_toStartOf="@+id/editLoginBtn"

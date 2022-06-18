@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 if (message.equals("admin") &&
                     password.equals("ewce@123")){
                         atom_message =  (message + " Login Successful ");
-                        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                        Intent intent = new Intent(MainActivity.this, MainActivityAdmin.class);
                         startActivity(intent);
                         Toast.makeText(MainActivity.this, atom_message, Toast.LENGTH_SHORT).show();
                         editTextPassword.setText("");
@@ -63,9 +63,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
+    public void custlogin(View view) {
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(intent);
+    }
 }

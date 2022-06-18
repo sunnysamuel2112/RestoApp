@@ -4,21 +4,20 @@ package com.example.resto;
 
 
 //import android.content.Intent;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
 
+// this is to check github branch
 public class MainActivity extends AppCompatActivity {
 
     private Button editLoginButton;
-    private TextView editTextForgotPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 if (message.equals("admin") &&
                     password.equals("ewce@123")){
                         atom_message =  (message + " Login Successful ");
-                        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                        Intent intent = new Intent(MainActivity.this, MainActivityAdmin.class);
                         startActivity(intent);
                         Toast.makeText(MainActivity.this, atom_message, Toast.LENGTH_SHORT).show();
                         editTextPassword.setText("");
@@ -67,9 +66,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
-
-
-
+    public void custlogin(View view) {
+        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(intent);
+    }
 }

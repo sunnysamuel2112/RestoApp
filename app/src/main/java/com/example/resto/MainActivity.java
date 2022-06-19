@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,8 @@ import androidx.appcompat.app.AppCompatActivity;
 // this is to check github branch
 public class MainActivity extends AppCompatActivity {
 
-    private Button editLoginButton;
+    Button editLoginButton;
+    TextView editTextCustLogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +24,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initViews();
+
+        editTextCustLogin = findViewById(R.id.EditTextCustLogin);
+
+
+        editTextCustLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+
 
         editLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,8 +80,5 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void custlogin(View view) {
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(intent);
-    }
+
 }

@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextForgotPassword"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextCustLogin"
         app:layout_constraintVertical_bias="0.101" />
 
     <EditText
@@ -75,21 +75,20 @@
         android:textAlignment="center"
         android:textColor="#04554D"
         android:textColorHint="#546E7A"
-        app:layout_constraintBottom_toTopOf="@+id/EditTextForgotPassword"
-        app:layout_constraintEnd_toEndOf="@+id/EditTextForgotPassword"
-        app:layout_constraintStart_toStartOf="@+id/EditTextForgotPassword"
+        app:layout_constraintBottom_toTopOf="@+id/EditTextCustLogin"
+        app:layout_constraintEnd_toEndOf="@+id/EditTextCustLogin"
+        app:layout_constraintStart_toStartOf="@+id/EditTextCustLogin"
         app:layout_constraintTop_toBottomOf="@+id/editUserName"
         app:layout_constraintVertical_bias="0.217" />
 
     <TextView
-        android:id="@+id/EditTextForgotPassword"
+        android:id="@+id/EditTextCustLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginTop="60dp"
         android:text="Login as Customer"
-        android:onClick="custlogin"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/editLoginBtn"
         app:layout_constraintStart_toStartOf="@+id/editLoginBtn"

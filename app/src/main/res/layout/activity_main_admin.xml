@@ -50,16 +50,16 @@
 
     <Button
         android:id="@+id/buttonAddDish"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
         android:text="Add"
-        app:layout_constraintEnd_toEndOf="@+id/editTextDishPrice"
+        app:layout_constraintEnd_toStartOf="@+id/buttonShowAll"
         app:layout_constraintStart_toStartOf="@+id/editTextDishPrice"
         app:layout_constraintTop_toBottomOf="@+id/switchIsVeg" />
 
     <ListView
-        android:id="@+id/ListViewDish"
+        android:id="@+id/ListViewDishes"
         android:layout_width="328dp"
         android:layout_height="410dp"
         android:layout_marginTop="10dp"
@@ -68,4 +68,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonAddDish" />
+
+    <Button
+        android:id="@+id/buttonShowAll"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="SHOW"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonAddDish"
+        app:layout_constraintEnd_toEndOf="@+id/editTextDishPrice"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddDish"
+        app:layout_constraintTop_toBottomOf="@+id/switchIsVeg" />
 </androidx.constraintlayout.widget.ConstraintLayout>

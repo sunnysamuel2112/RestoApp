@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/editWelcomeMsg"
-        android:layout_width="258dp"
-        android:layout_height="99dp"
+        android:layout_width="350dp"
+        android:layout_height="94dp"
         android:layout_alignStart="@+id/textLogin"
         android:layout_alignEnd="@+id/textLogin"
         android:layout_alignParentBottom="true"
@@ -20,32 +20,38 @@
         app:autoSizeTextType="uniform"
         app:layout_constraintBottom_toTopOf="@+id/buttonMenu"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonOrder"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginBottom="40dp"
         android:text="Order"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/buttonTimings"
         app:layout_constraintEnd_toEndOf="@+id/buttonTimings"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonTimings" />
+        app:layout_constraintStart_toStartOf="@+id/buttonTimings"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMenu" />
 
     <Button
         android:id="@+id/buttonTimings"
         android:layout_width="200dp"
         android:layout_height="50dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginBottom="156dp"
         android:text="Timings"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/buttonLogout"
         app:layout_constraintEnd_toEndOf="@+id/buttonLogout"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/buttonLogout" />
+        app:layout_constraintStart_toStartOf="@+id/buttonLogout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOrder" />
 
     <Button
         android:id="@+id/buttonMenu"
@@ -69,7 +75,8 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.883" />
+        app:layout_constraintVertical_bias="0.926" />
 </androidx.constraintlayout.widget.ConstraintLayout>
